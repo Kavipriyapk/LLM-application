@@ -20,13 +20,26 @@ A simple Large Language Model (LLM) application built using Python and Google's 
 
 ## Project Architecture
 
-User Query
-↓
-Gemini LLM
-↓
-Response Generation
-↓
-Final Answer
+                     User Query
+                           │
+                           ▼
+                     Python App
+                           │
+                           ▼
+                  Environment Variables
+                        (.env)
+                           │
+                           ▼
+                     Gemini API
+                           │
+                           ▼
+                 ChatGoogleGenerativeAI
+                           │
+                           ▼
+                  Response Generation
+                           │
+                           ▼
+                     Final Answer
 
 ## Project Structure
 
